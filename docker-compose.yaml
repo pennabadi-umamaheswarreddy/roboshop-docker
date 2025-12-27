@@ -22,6 +22,8 @@ services:
     build: ./mysql
     image: umadevops008/mysql:v1
     container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: RoboShop@1
     volumes:
     - mysql:/var/lib/mysql
   rabbitmq:
